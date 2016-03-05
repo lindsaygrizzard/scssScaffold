@@ -12,12 +12,13 @@
 
 
 /* Floated Columns ------------------ */
-.resorts,
-.tips {
-  width: 46.5%; }
+.column-one {
+    width: 50%;
+    background-color: #efb8b8;
+}
 
-.tips {
-  float: left; }
-
-.resorts {
-  float: right; }
+.column-two {
+  width: 50%; 
+  background-color: #c2dfef;
+  float: right;
+}

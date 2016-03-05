@@ -1,207 +1,84 @@
 /*
-    Importing all of our index partials (that import all of their respective imports)
-    pre-compiles all of our scss styles. This allows the browser to only make ONE
-    http request instead of one per scss partial. If this doesn't make sense yet,
-    just know that 
-        1. import all partials '_example.scss'  into their parent  '_index.scss'  file
-        2. import all 'index.scss''s into this file
+Error: Invalid CSS after "...-color: orange;": expected "}", was ""
+        on line 18 of scss/components/_buttons.scss
+        from line 5 of scss/components/_index.scss
+        from line 17 of scss/application.scss
+
+13: .exampleButton { 
+14:   font-size: 1.25em;
+15:   border-bottom: 3px solid;
+16:   padding: 0 9px 3px;
+17:   margin-top: 20px;
+18:   background-color: orange;
+
+Backtrace:
+scss/components/_buttons.scss:18
+scss/components/_index.scss:5
+scss/application.scss:17
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:1115:in `expected'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:1110:in `tok!'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:656:in `block'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:647:in `ruleset'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:673:in `block_child'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:663:in `block_contents'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:123:in `stylesheet'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/scss/parser.rb:39:in `parse'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/engine.rb:403:in `_to_tree'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/engine.rb:309:in `to_tree'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:324:in `block in visit_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block (2 levels) in visit_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `map'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:326:in `block in visit_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:88:in `block in with_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:88:in `with_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:323:in `visit_import'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:79:in `block in with_base'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:115:in `with_frame'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/stack.rb:79:in `with_base'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:471:in `on_file_changed'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `call'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/Users/lindsaygrizzard/.rvm/gems/ruby-2.2.3/gems/sass-3.4.21/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
 */
-/**************************************
-             BASE STYLES
-***************************************/
-/*
-   examples of css things considered 'base'
-    remove and insert your own scss code
-*/
-* {
-  box-sizing: border-box; }
-
-body {
-  color: #878787;
-  margin: 0;
-  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
-
-h1,
-h2 {
-  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; }
-
-h2 {
-  font-size: 3.3125em;
-  font-weight: normal;
-  line-height: 1.1;
-  margin: 0 0 .5em; }
-
-h3 {
-  font-size: 1.25em;
-  color: #48525c;
-  line-height: 1.2;
-  margin-bottom: 1.7em; }
-
-img {
-  max-width: 100%;
-  margin-bottom: 20px;
-  border-radius: 10px; }
-
-ul,
-ol {
-  margin: 30px 0; }
-
-li {
-  margin-bottom: 10px; }
-
-/* Pseudo-classes ------------------ */
-a:link {
-  color: #ffa949;
-  text-decoration: none; }
-
-a:visited {
-  color: lightblue; }
-
-a:hover {
-  color: rgba(255, 169, 73, 0.5); }
-
-a:active {
-  color: lightcoral; }
-
-/**************************************
-           BUTTONS
-***************************************/
-/*
-   examples of css things considered buttons
-   remove and insert your own scss code
-*/
-.callout {
-  font-size: 1.25em;
-  border-bottom: 3px solid;
-  padding: 0 9px 3px;
-  margin-top: 20px;
-  display: inline-block; }
-
-/**************************************
-              ICONS
-***************************************/
-/*
-   examples of css things considered icon styles
-   remove and insert your own scss code
-*/
-.arrow {
-  width: 50px;
-  margin-top: 150px; }
-
-/**************************************
-              TYPOGRAPHY
-***************************************/
-/*
-   examples of css things considered typography styles
-   remove and insert your own scss code
-*/
-@font-face {
-  font-family: 'Abolition Regular';
-  src: url("../fonts/abolition-regular-webfont.eot");
-  src: url("../fonts/abolition-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abolition-regular-webfont.woff") format("woff"), url("../fonts/abolition-regular-webfont.ttf") format("truetype"); }
-.main-heading {
-  font-size: 5.625rem;
-  color: white;
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1.3;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
-  margin: 12px 0 0; }
-
-.main-title {
-  color: white;
-  font-size: 1.625rem;
-  letter-spacing: .065em;
-  font-weight: 200;
-  border-bottom: 2px solid;
-  padding-bottom: 10px; }
-
-.intro {
-  font-size: 1.25em;
-  line-height: 1.6;
-  color: initial; }
-
-/**************************************
-         LAYOUT COLUMNS 
-***************************************/
-/*
-   examples of css things considered column styles
-   remove and insert your own scss code
-*/
-/* Floated Columns ------------------ */
-.resorts,
-.tips {
-  width: 46.5%; }
-
-.tips {
-  float: left; }
-
-.resorts {
-  float: right; }
-
-/**************************************
-         CONTAINERS
-***************************************/
-/*
-   examples of css things considered container styles
-   remove and insert your own scss code
-*/
-.primary-content,
-.secondary-content {
-  width: 75%;
-  padding-left: 50px;
-  padding-right: 50px;
-  margin: auto;
-  max-width: 960px; }
-
-.wildlife {
-  color: white;
-  text-align: left;
-  padding: 18% 24%;
-  border-top: 10px solid #ffa949;
-  margin: 105px 0 60px;
-  background: #434a52 url("../img/bear.jpg") no-repeat center;
-  background-size: cover;
-  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
-  border-radius: 10px; }
-
-.primary-content,
-.main-header,
-.main-footer {
-  text-align: center; }
-
-.primary-content {
-  padding-top: 25px;
-  padding-bottom: 95px; }
-
-.secondary-content {
-  padding-top: 80px;
-  padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6; }
-
-/**************************************
-        MAIN FOOTER STYLES
-***************************************/
-/*
-   examples of css things considered main footer styles
-   remove and insert your own scss code
-*/
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  border-bottom: 10px solid #ffa949; }
-
-/**************************************
-        MAIN HEADER STYLES
-***************************************/
-/*
-   examples of css things considered main header styles
-   remove and insert your own scss code
-*/
-.main-header {
-  padding-top: 170px;
-  height: 850px;
-  background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url("../img/mountains.jpg") no-repeat center;
-  background-size: cover; }
-
-/*# sourceMappingURL=application.css.map */
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...-color: orange;\": expected \"}\", was \"\"\A         on line 18 of scss/components/_buttons.scss\A         from line 5 of scss/components/_index.scss\A         from line 17 of scss/application.scss\A \A 13: .exampleButton { \A 14:   font-size: 1.25em;\A 15:   border-bottom: 3px solid;\A 16:   padding: 0 9px 3px;\A 17:   margin-top: 20px;\A 18:   background-color: orange;"; }
