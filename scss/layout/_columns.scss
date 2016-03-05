@@ -13,12 +13,16 @@
 
 /* Floated Columns ------------------ */
 .column-one {
-    width: 50%;
-    background-color: #efb8b8;
+    width: 45%;
+    height: 300px;
+    background-color: #efb75d;
+     float: right;
 }
 
 .column-two {
-  width: 50%; 
-  background-color: #c2dfef;
-  float: right;
+  width: 45%; 
+  height: 300px;
+  background-color: #edd0a6;
+
+  
 }

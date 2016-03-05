@@ -9,10 +9,10 @@
 */
 
 
-
 .exampleButton { 
   font-size: 1.25em;
-  border-bottom: 3px solid;
+  border: 2px orange solid;
+  border-radius: 5px;
   padding: 0 9px 3px;
-  margin-top: 20px;
-  background-color: orange;
+  background-color: white;
+}
