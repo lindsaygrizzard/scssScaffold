@@ -1,0 +1,23 @@
+/**************************************
+         LAYOUT COLUMNS 
+***************************************/
+
+
+/*
+   examples of css things considered column styles
+   remove and insert your own scss code
+*/
+
+
+
+
+/* Floated Columns ------------------ */
+.resorts,
+.tips {
+  width: 46.5%; }
+
+.tips {
+  float: left; }
+
+.resorts {
+  float: right; }

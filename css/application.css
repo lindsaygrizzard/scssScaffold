@@ -1,0 +1,207 @@
+/*
+    Importing all of our index partials (that import all of their respective imports)
+    pre-compiles all of our scss styles. This allows the browser to only make ONE
+    http request instead of one per scss partial. If this doesn't make sense yet,
+    just know that 
+        1. import all partials '_example.scss'  into their parent  '_index.scss'  file
+        2. import all 'index.scss''s into this file
+*/
+/**************************************
+             BASE STYLES
+***************************************/
+/*
+   examples of css things considered 'base'
+    remove and insert your own scss code
+*/
+* {
+  box-sizing: border-box; }
+
+body {
+  color: #878787;
+  margin: 0;
+  font: 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+h1,
+h2 {
+  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif; }
+
+h2 {
+  font-size: 3.3125em;
+  font-weight: normal;
+  line-height: 1.1;
+  margin: 0 0 .5em; }
+
+h3 {
+  font-size: 1.25em;
+  color: #48525c;
+  line-height: 1.2;
+  margin-bottom: 1.7em; }
+
+img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px; }
+
+ul,
+ol {
+  margin: 30px 0; }
+
+li {
+  margin-bottom: 10px; }
+
+/* Pseudo-classes ------------------ */
+a:link {
+  color: #ffa949;
+  text-decoration: none; }
+
+a:visited {
+  color: lightblue; }
+
+a:hover {
+  color: rgba(255, 169, 73, 0.5); }
+
+a:active {
+  color: lightcoral; }
+
+/**************************************
+           BUTTONS
+***************************************/
+/*
+   examples of css things considered buttons
+   remove and insert your own scss code
+*/
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: 20px;
+  display: inline-block; }
+
+/**************************************
+              ICONS
+***************************************/
+/*
+   examples of css things considered icon styles
+   remove and insert your own scss code
+*/
+.arrow {
+  width: 50px;
+  margin-top: 150px; }
+
+/**************************************
+              TYPOGRAPHY
+***************************************/
+/*
+   examples of css things considered typography styles
+   remove and insert your own scss code
+*/
+@font-face {
+  font-family: 'Abolition Regular';
+  src: url("../fonts/abolition-regular-webfont.eot");
+  src: url("../fonts/abolition-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/abolition-regular-webfont.woff") format("woff"), url("../fonts/abolition-regular-webfont.ttf") format("truetype"); }
+.main-heading {
+  font-size: 5.625rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1.3;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+  margin: 12px 0 0; }
+
+.main-title {
+  color: white;
+  font-size: 1.625rem;
+  letter-spacing: .065em;
+  font-weight: 200;
+  border-bottom: 2px solid;
+  padding-bottom: 10px; }
+
+.intro {
+  font-size: 1.25em;
+  line-height: 1.6;
+  color: initial; }
+
+/**************************************
+         LAYOUT COLUMNS 
+***************************************/
+/*
+   examples of css things considered column styles
+   remove and insert your own scss code
+*/
+/* Floated Columns ------------------ */
+.resorts,
+.tips {
+  width: 46.5%; }
+
+.tips {
+  float: left; }
+
+.resorts {
+  float: right; }
+
+/**************************************
+         CONTAINERS
+***************************************/
+/*
+   examples of css things considered container styles
+   remove and insert your own scss code
+*/
+.primary-content,
+.secondary-content {
+  width: 75%;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: auto;
+  max-width: 960px; }
+
+.wildlife {
+  color: white;
+  text-align: left;
+  padding: 18% 24%;
+  border-top: 10px solid #ffa949;
+  margin: 105px 0 60px;
+  background: #434a52 url("../img/bear.jpg") no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 0 50px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 10px; }
+
+.primary-content,
+.main-header,
+.main-footer {
+  text-align: center; }
+
+.primary-content {
+  padding-top: 25px;
+  padding-bottom: 95px; }
+
+.secondary-content {
+  padding-top: 80px;
+  padding-bottom: 70px;
+  border-bottom: 2px solid #dfe2e6; }
+
+/**************************************
+        MAIN FOOTER STYLES
+***************************************/
+/*
+   examples of css things considered main footer styles
+   remove and insert your own scss code
+*/
+.main-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 10px solid #ffa949; }
+
+/**************************************
+        MAIN HEADER STYLES
+***************************************/
+/*
+   examples of css things considered main header styles
+   remove and insert your own scss code
+*/
+.main-header {
+  padding-top: 170px;
+  height: 850px;
+  background: linear-gradient(#ffa949, transparent 90%), linear-gradient(0deg, #fff, transparent), #ffa949 url("../img/mountains.jpg") no-repeat center;
+  background-size: cover; }
+
+/*# sourceMappingURL=application.css.map */

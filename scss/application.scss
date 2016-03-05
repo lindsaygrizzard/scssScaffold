@@ -1,0 +1,21 @@
+//==========================================
+// ALL INDEX IMPORTS
+//==========================================
+
+/*
+    Importing all of our index partials (that import all of their respective imports)
+    pre-compiles all of our scss styles. This allows the browser to only make ONE
+    http request instead of one per scss partial. If this doesn't make sense yet,
+    just know that 
+        1. import all partials '_example.scss'  into their parent  '_index.scss'  file
+        2. import all 'index.scss''s into this file
+*/
+
+
+
+@import 'base/index'; // this imports everything from path base/_index.scss partial file
+@import 'components/index'; // this imports everything from path components/_index.scss partial file
+@import 'global/index'; // this imports everything from path global/_index.scss partial file
+@import 'layout/index'; // this imports everything from path layout/_index.scss partial file
+@import 'pages/index'; // this imports everything from path pages/_index.scss partial file
+@import 'vendors/index'; // this imports everything from path vendors/_index.scss partial file
